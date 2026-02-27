@@ -1,4 +1,4 @@
-# SMPTE _AG-32_ - _Use of AI (artificial intelligence) Tools in Standards Development_
+# SMPTE _AG-32_ - _Use of Artificial Intelligence (AI)  Tools in Standards Development_
 
 _This repository is *private*._
 

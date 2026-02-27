@@ -13,12 +13,12 @@
     <!-- <meta itemprop="pubDateTime" content="20XX-XX-XX" /> -->
     <!-- <meta itemprop="pubRevisionOf" content="SMPTE ST XXXX-Y:ZZZZ" /> -->
 
-    <title>Use of AI (artificial intelligence) Tools in Standards Development</title>
+    <title>Use of Artificial Intelligence (AI)  Tools in Standards Development</title>
   </head>
   <body>
 
     <section id="sec-scope">
-      <p>This Administrative Guideline provides guidelines on how Artificial Intelligence (AI) can be used in the development of SMPTE standards. It is intended to help TC members understand how AI can be used to assist in the development of standards, and to provide guidance on how to use AI in a way that is consistent with the principles of standardization.</p>
+      <p>This Administrative Guideline provides guidelines on how <dfn data-lt="AI">Artificial Intelligence</dfn> (<a>AI</a>) may be used in the development of SMPTE standards. It is intended to help <a>Standards Community</a> (<a>SC</a>) Members understand how <a>AI</a> may be used to assist in the development of standards, and to provide guidance on how to use <a>AI</a> in a way that is consistent with the principles of standardization.</p>
     </section>
 
     <section id="sec-normative-references">
@@ -28,36 +28,207 @@
       </ul>
     </section>
 
-    <section id="sec-guidelines-for-AI-use">
-      <h2>Guidelines for AI Use</h2>
-      <section id="sec-general">
-        <h3>General</h3>
-        <p>
-          
-        </p>
-      </section>
-
-      <section id="sec-conduct">
-        <h3>Code of conduct</h3>
-        <p> 
-
-        </p>
-      </section>
-      
+    <section id="sec-terms-and-definitions">
+      <dl id="terms-int-defs">
+        <dt><dfn>Standards Community</dfn></dt>
+        <dt><dfn>SC</dfn></dt>
+        <dd>all members of all Technology Committees</dd>
+        <dd class="note">See <a href="#bib-smpte-standards-operations-manual"></a></dd>
+      </dl>
     </section>
 
+    <section id="sec-policy">
+      <h2>Policy Notice</h2>
+      <section id="sec-policy-purpose">
+        <h3>Purpose</h3>
+        <p>This Administrative Guideline establishes requirements for the responsible use of <a>Artificial Intelligence</a> (<a>AI</a>). Its purpose is to:</p>
+        <ul>
+          <li>Enable responsible, effective use of <a>AI</a> tools;</li>
+          <li>Protect SMPTE's intellectual property, confidentiality, privacy, and reputation; and</li>
+          <li>Ensure compliance with copyright, data protection, and other applicable laws.</li>
+        </ul>
+      </section>
+
+      <section id="sec-policy-scope">
+        <h3>Scope</h3>
+        <p>This policy applies to:</p>
+        <ol type="a">
+          <li>Covered Individuals: All <a>SC</a> Members and their representatives, and all other individuals participating in <a>SC</a> activities.</li>
+          <li>Covered <a>AI</a> Tools: Generative <a>AI</a> systems and services that create, modify, or synthesize content, including:
+            <ul>
+              <li>Large language models (e.g., ChatGPT, Claude, Gemini)</li>
+              <li><a>AI</a> coding assistants (e.g., GitHub Copilot, CodeWhisperer)</li>
+              <li><a>AI</a>-powered search and research tools that synthesize information</li>
+              <li><a>AI</a> meeting assistants that transcribe, summarize, or generate content</li>
+              <li><a>AI</a> features embedded in collaborative platforms and meeting software</li>
+              <li>Image, video, and audio generation tools used to create <a>SC</a> materials</li>
+            </ul>
+          </li>
+          <li>Responsibility. Individuals covered by this policy are responsible for ensuring that any tools they use in connection with content they contribute are permissible under, and in compliance with, this policy.</li>
+        </ol>
+      </section>
+    </section>
+    <section id="sec-classification-sc-materials">
+      <h2>Classification of <a>SC</a> Materials</h2>
+      <p><a>SC</a> materials are classified as follows:</p>
+      <ol type="a">
+        <li>Restricted Materials: Include, but are not limited to:
+          <ul>
+            <li>Draft standards, technical specifications, and normative documents prior to public review</li>
+            <li>Confidential member disclosures, submissions and contributions</li>
+            <li>Meeting materials, notes and minutes prior to public disclosure</li>
+            <li>Personal information and privacy-protected data</li>
+            <li>Internal working drafts of guides, white papers, and best practices</li>
+          </ul>
+        </li>
+        <li>Public Materials: Include, but are not limited to:
+          <ul>
+            <li>Published standards and specifications</li>
+            <li>Final versions of guides, white papers, and best practices</li>
+            <li>Public meeting materials and approved minutes</li>
+            <li>Content published on SMPTE's website or publicly available repositories</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section id="sec-mandatory-requirements">
+      <h2>Mandatory Requirements</h2>
+      <section id="sec-disclosure-requirements">
+        <h3>Disclosure Requirements</h3>
+        <p>When contributing any content to <a>SC</a> that was created with or substantially assisted by <a>AI</a> tools, <a>SC</a> Members shall disclose:</p>
+        <ul>
+          <li>That <a>AI</a> tools were used</li>
+          <li>The specific <a>AI</a> tool(s) used (name, and version if available)</li>
+          <li>The nature and extent of <a>AI</a> assistance (e.g., "drafted initial text," "generated code examples," "summarized research")</li>
+        </ul>
+        <ol type="a">
+          <li>Method of Disclosure
+            <ul>
+              <li>For contributions to any Engineering Document, or Other Published Document, as defined in <a href="#bib-smpte-standards-operations-manual"></a>: Include disclosure in <code>Foreword</code> section as defined in <a href="#sec-disclaimer"></a></li>
+              <li>For written contributions: Include disclosure in cover email, commit message, or document metadata</li>
+              <li>For meeting contributions: State at the time of contribution or in follow-up communication</li>
+              <li>For code contributions: Include disclosure in commit messages and/or comments</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <section id="sec-training-data-restrictions">
+        <h3>Training Data Restrictions</h3>
+        <ul>
+          <li>Restricted materials shall not be input into any <a>AI</a> tool that uses inputs for model training or improvement</li>
+          <li>Public materials may be used with training-enabled tools</li>
+          <li><a>SC</a> Members shall confirm that any <a>AI</a> tool they use complies with these restrictions through review of applicable license terms, privacy policies, and tool settings</li>
+        </ul>
+      </section>
+
+      <section id="sec-accuracy-verification">
+        <h3>Accuracy and Verification Requirements</h3>
+        <p>Before submitting any content to <a>SC</a> that was generated by or with the assistance of an <a>AI</a> tool, <a>SC</a> Members shall:</p>
+        <ul>
+          <li>Review and verify its accuracy, completeness, and appropriateness</li>
+          <li>Ensure that any factual claims, data, or referenced materials are properly sourced and verified</li>
+          <li>Evaluate the content for potential bias, errors, or inappropriate material</li>
+        </ul>
+      </section>
+
+      <section id="sec-ai-input-materials">
+        <h3><a>AI</a> Input Materials</h3>
+        <ul>
+          <li><a>SC</a> Members shall only input materials into an <a>AI</a> where they have the legal right to use such materials for that purpose</li>
+          <li>Third-party copyrighted content shall not be input into <a>AI</a> tools where doing so would exceed fair use or applicable license terms</li>
+        </ul>
+      </section>
+
+      <section id="sec-code-technical-contributions">
+        <h3>Code and Technical Contributions</h3>
+        <ul>
+          <li><a>AI</a> tools may be used to assist with code drafting or analysis, but all code contributions shall comply with SMPTE's open source and/or licensing policies</li>
+          <li>Contributors are responsible for ensuring <a>AI</a>-assisted code does not introduce incompatible licenses, security vulnerabilities, or undisclosed dependencies</li>
+          <li>Automated code generation shall not bypass established review, testing, or contribution processes</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="sec-sc-tools">
+      <h2><a>SC</a> Tools and Platforms</h2>
+      <section id="sec-meeting-platforms">
+        <h3>Meeting Platforms and Tools</h3>
+        <p>Before procuring or enabling <a>AI</a> features in meeting platforms (Zoom, Microsoft Teams, Google Meet, etc.), SMPTE and/or <a>SC</a> Member shall:</p>
+        <ul>
+          <li>Evaluate data retention and training policies</li>
+          <li>Assess privacy and security protections</li>
+          <li>Disable <a>AI</a> features that use meeting content for training unless contractually prohibited</li>
+          <li>Configure retention settings consistent with SMPTE's record retention policy</li>
+          <li>Inform meeting participants when <a>AI</a> tools are being used for transcription, summarization, or other purposes</li>
+          <li>Where required by law or policy, consent of all participants shall be obtained before recording or transcription</li>
+        </ul>
+      </section>
+
+      <section id="sec-collaborative-platforms">
+        <h3>Collaborative Development Platforms</h3>
+        <p>For platforms used for standards development (GitHub, GitLab, etc.), SMPTE shall:</p>
+        <ul>
+          <li>Review and configure <a>AI</a>-assisted coding features in a manner consistent with this policy</li>
+          <li>Provide guidance to <a>SC</a> Members on configuring personal <a>AI</a> tools when contributing via these platforms</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="sec-appropriate-inappropriate-uses">
+      <h2>Appropriate and Inappropriate Uses</h2>
+
+      <section id="sec-appropriate-uses">
+        <h3>Appropriate Uses</h3>
+        <p><a>AI</a> tools may be used for the following purposes:</p>
+        <ul>
+          <li>Generating initial drafts or outlines for review and substantial modification</li>
+          <li>Summarizing lengthy technical documents for internal review</li>
+          <li>Identifying relevant research or prior art</li>
+          <li>Generating test cases or example code for illustration</li>
+          <li>Translating content between languages (with human review)</li>
+          <li>Formatting and restructuring existing content</li>
+          <li>Brainstorming and ideation</li>
+        </ul>
+      </section>
+
+      <section id="sec-inappropriate-uses">
+        <h3>Inappropriate Uses</h3>
+        <p><a>AI</a> tools shall not be used to:</p>
+        <ul>
+          <li>Generate final normative content without substantial human review and modification; be aware that content created solely by an <a>AI</a> may not be subject to copyright protection under applicable law</li>
+          <li>Replace human technical judgment or expertise</li>
+          <li>Process Restricted materials in training-enabled systems</li>
+          <li>Circumvent <a>SC</a>'s deliberative processes</li>
+          <li>Generate content that will be attributed to a human author without disclosure of <a>AI</a> origin</li>
+          <li>Analyze confidential materials in non-secure <a>AI</a> systems</li>
+          <li>Input personal information about identifiable individuals unless necessary and authorized</li>
+        </ul>
+      </section>
+
+      <section id="sec-reporting">
+        <h3>Reporting</h3>
+        <p>Any individual who becomes aware of a violation of this policy shall report the matter to the chair of the related working group or to another appropriate representative of SMPTE.</p>
+      </section>
+    </section>
+
+    <section id="sec-enforcement">
+      <h2>Enforcement</h2>
+        <p>Violations of this policy may result in disciplinary action, including without limitation revocation of access to SMPTE activities and resources.</p>
+    </section>
   
-    <section id="sec-disclaimer">
+    <section class="annex" id="sec-disclaimer">
       <h2>Disclaimers</h2>
 
       <section id="sec-disclaimer-generated">
-        <h3>Disclaimer for AI Generated Content</h3>
-        <p>All documents or works created fully, or in any part with the assistence of AI tool(s), shall contain this disclaimer text within the <code>Foreword</code> clause. </p>
+        <h3>Disclaimer for <a>AI</a> Generated Content</h3>
+        <p>All documents or works created fully, or in any part with the assistence of <a>AI</a> tool(s), shall contain this disclaimer text within the <code>Foreword</code> clause. </p>
 
 <pre>
 Disclaimer:
 
-This document was created with the assistance of artificial intelligence (AI) tools to support drafting,
+This document was created with the assistance of Artificial Intelligence (AI) tools to support drafting,
 editing, and/or content generation. AI generated material may contain unintended errors, omissions, or 
 interpretations.
 
@@ -72,8 +243,8 @@ publications and approved standards for definitive information.
      
 
       <section id="sec-disclaime-usager">
-        <h3>Notice on the Use of Artificial Intelligence (AI)</h3>
-        <p>All documents or works that contain content(s) and/or element(s) created fully, or in any part with the assistence of AI tool(s), shall contain this disclaimer text within the <code>Foreword</code> clause. </p>
+        <h3>Notice on the Use of Artificial Intelligence (<a>AI</a>)</h3>
+        <p>All documents or works that contain content(s) and/or element(s) created fully, or in any part with the assistence of <a>AI</a> tool(s), shall contain this disclaimer text within the <code>Foreword</code> clause. </p>
 <pre>
 Disclaimer:
 
